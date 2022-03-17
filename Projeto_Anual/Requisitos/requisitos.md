@@ -32,3 +32,11 @@
         > perfil do usuário em cada jogo, mostrando troféus, horas jogadas e dados relevantes do usuário para cada jogo
     - Sistema de troféus:
         > sistema de troféus dos jogos onde ao jogar, o usuário ganha pontos, que podem ser utilizados para conseguir descontos em outros jogos da loja
+
+- Classes no projeto
+    > Jogo
+    > User
+- Métodos do projeto
+    - Métodos da classe Jogo
+        > aplicaDescontoDe(float desconto)
+    - Métodos da classe User
