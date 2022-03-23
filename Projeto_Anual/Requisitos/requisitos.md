@@ -17,7 +17,7 @@
     - Navegação por áreas:
         > navegação por biblioteca de jogos, comunidade, suporte loja de jogos(promoções, categorias, etc)
     - Área do usuário:
-        > Área onde se tem o perfil do usúario com seus troféus jogos,etc
+        > Área onde se tem o perfil do usúario com seus troféus, jogos, email, nome, região, idioma
     - ux/ui:
         > seguindo uma experiência parecida com a steam
     - Compra:
