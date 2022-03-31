@@ -10,17 +10,25 @@ public class Sistema {
         Conta conta2 = new Conta(2,5.0, user2);
         Conta conta3 = new Conta(3,1000000000.0, user3);
 
-        conta1.visualizarConta();
-        conta2.visualizarConta();
-        conta3.visualizarConta();
+        String conta11 = conta1.visualizarConta();
+        String conta22 = conta2.visualizarConta();
+        String conta33 = conta3.visualizarConta();
+        System.out.println(conta11);
+        System.out.println(conta22);
+        System.out.println(conta33);
         String qrcode1 = Transacoes.gerarQRCode(2, user1.getNome(), 250.0);
         pagarQRCode(qrcode1, conta2);
         pagarQRCode(qrcode1, conta3);
         pagarQRCode(qrcode1, conta2);
         String qrcode2 = Transacoes.gerarQRCode(2, user2.getNome(), 1000.0);
         pagarQRCode(qrcode2, conta3);
-
-
+        
+        conta11 = conta1.visualizarConta();
+        conta22 = conta2.visualizarConta();
+        conta33 = conta3.visualizarConta();
+        System.out.println(conta11);
+        System.out.println(conta22);
+        System.out.println(conta33);
     }
 
     boolean pagarQRCode(String qRCode,  Conta contaPagante){
