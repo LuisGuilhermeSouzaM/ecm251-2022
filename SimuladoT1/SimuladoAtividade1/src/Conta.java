@@ -1,24 +1,32 @@
 public class Conta {
-    private String idConta;
-    private float saldo;
-    
-    public Conta(String idConta, float saldo) {
+    private int idConta;
+    private double saldo;
+    Usuario usuario;
+
+    public Conta(int idConta, double saldo, Usuario usuario) {
         this.idConta = idConta;
         this.saldo = saldo;
+        this.usuario = usuario;
     }
-    public String toString(){
-        return this.idConta + ";" + this.saldo;
+    
+    public String visualizarConta(){
+        return "Conta id: " + idConta + 
+        "\nSaldo: " + saldo + 
+        "\nCliente: " + usuario.getNome();
     }
-    public String getIdConta() {
+    public int getIdConta() {
         return idConta;
     }
-    public float getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
-    public void setSaldo(float saldo) {
+    public Usuario getUsuario() {
+        return usuario;
+    }
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
-    public void setIdConta(String idConta) {
+    public void setIdConta(int idConta) {
         this.idConta = idConta;
     }
 }
