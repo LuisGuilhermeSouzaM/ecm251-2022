@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ValidadorCPF {
-    private static List<String> cpfInvalido = new ArrayList<String>(){{add("11111111111"); add("22222222222"); add("33333333333"); add("44444444444"); add("55555555555"); add("66666666666"); add("77777777777"); add("88888888888"); add("99999999999"); add("00000000000");}};
+    private static List<Integer> cpfInvalido = new ArrayList<Integer>(){{add(1); add(1); add(3333333);}};
 
     public static boolean validar(String cpf) {
         cpf = cpf.replace(".", "");
