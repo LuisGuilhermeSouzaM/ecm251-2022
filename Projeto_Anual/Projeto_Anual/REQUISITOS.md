@@ -38,5 +38,5 @@
     > User
 - Métodos do projeto
     - Métodos da classe Jogo
-        > aplicaDescontoDe(float desconto)
+        > aplicaDescontoDe(double desconto)
     - Métodos da classe User
