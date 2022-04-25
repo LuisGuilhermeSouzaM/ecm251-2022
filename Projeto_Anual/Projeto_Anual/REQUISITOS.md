@@ -34,9 +34,25 @@
         > sistema de troféus dos jogos onde ao jogar, o usuário ganha pontos, que podem ser utilizados para conseguir descontos em outros jogos da loja
 
 - Classes no projeto
-    > Jogo
-    > User
+    - Jogo
+        - double preco -> preço padrão do jogo
+        - String nome -> nome do jogo
+        - boolean promocao -> se o jogo está em promoção ou não
+        - int idadeMinima -> idade miníma para jogar
+    - User
+        - public static int contador = 0; -> contador gerador de id de usuario
+        - String username -> username do usuario
+        - LocalDate birthDate -> data de nascimento do usuario
+        - String email -> email do usuario
+        - int idUser -> id de usuario
+        - int age -> idade do usuario, calculada a partir de sua data de nascimento e da data atual pela função calculateAge
+        - Jogo jogo -> jogo que o usuario quer comprar
+        - LocalDate currentDate =  LocalDate.now(); -> data atual
 - Métodos do projeto
     - Métodos da classe Jogo
-        > aplicaDescontoDe(double desconto)
+        - public boolean aplicaDescontoDe(double desconto) -> retorna falso caso o Jogo nao estiver em promocao ou caso o desconto for maior que 30% e verdadeiro caso contrário
+        - getters e setters
     - Métodos da classe User
+        - getters e setters
+        - boolean podeJogar() -> retorna falso se o jogador não tem a idade requerida para jogar o jogo e verdadeiro caso contrário
+        - calculateAge(LocalDate birthDate, LocalDate currentDate) -> calcula a idade do usuario a partir de sua data de nascimento e da data atual
