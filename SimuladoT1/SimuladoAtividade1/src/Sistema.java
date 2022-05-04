@@ -1,5 +1,3 @@
-import java.util.GregorianCalendar;
-
 public class Sistema {
     public void run(){
         Usuario user1 = new Usuario("All Might", "allmight@outlook.com", "1234");
