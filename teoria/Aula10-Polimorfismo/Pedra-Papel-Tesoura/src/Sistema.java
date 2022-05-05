@@ -27,9 +27,9 @@ public class Sistema {
 
     private static String avaliaJogadas(Jogada jogada1, Jogada jogada2) {
         if(jogada1.verifificarVenceu(jogada2))
-            return "jogada 1";
+            return "Jogada 2";
         if(jogada2.verifificarVenceu(jogada1))
-            return "jogada 2";
+            return "Jogada 2";
         else
             return "Empate";
     }
