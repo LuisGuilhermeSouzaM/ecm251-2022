@@ -8,7 +8,7 @@ public class BigBrothers extends Membro {
 
     @Override
     public void postarMensagem() {
-        if(this.getHora() == EnumHora.TRABALHO)
+        if(this.getHora() == EnumHora.REGULAR)
             System.out.println("Sempre ajudando as pessoas membros ou não S2!");
         else if(this.getHora() == EnumHora.EXTRAS)
             System.out.println("...");

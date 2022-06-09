@@ -6,7 +6,7 @@ public class MobileMembers extends Membro{
 
     @Override
     public void postarMensagem() {
-        if(this.getHora() == EnumHora.TRABALHO)
+        if(this.getHora() == EnumHora.REGULAR)
             System.out.println("Happy Coding!");
         else if(this.getHora() == EnumHora.EXTRAS)
             System.out.println("MAsK_S0c13ty");

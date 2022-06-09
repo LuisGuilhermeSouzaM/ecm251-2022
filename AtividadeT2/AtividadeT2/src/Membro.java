@@ -15,7 +15,7 @@ public abstract class Membro implements PostarMensagem{
         return hora;
     }
 
-    public void mudaTurno(EnumHora hora) {
+    public void setHora(EnumHora hora) {
         this.hora = hora;
     }
 

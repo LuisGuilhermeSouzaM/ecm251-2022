@@ -1,3 +1,3 @@
 public enum EnumHora {
-    EXTRAS, TRABALHO;
+    EXTRAS, REGULAR;
 }

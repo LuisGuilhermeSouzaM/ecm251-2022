@@ -6,7 +6,7 @@ public class HeavyLifters extends Membro{
 
     @Override
     public void postarMensagem() {
-        if(this.getHora() == EnumHora.TRABALHO)
+        if(this.getHora() == EnumHora.REGULAR)
             System.out.println("Podem contar conosco!");
         else if(this.getHora() == EnumHora.EXTRAS)
             System.out.println("N00b_qu3_n_Se_r3pita.bat");
