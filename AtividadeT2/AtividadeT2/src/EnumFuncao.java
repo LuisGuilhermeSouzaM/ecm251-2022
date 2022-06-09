@@ -1,3 +1,3 @@
 public enum EnumFuncao {
-    ScriptGuys, MobileMembers, HeavyLifters, BigBrothers;
+    SCRIPTGUYS, MOBILEMEMBERS, HEAVYLIFTERS, BIGBROTHERS;
 }
