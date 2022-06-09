@@ -3,8 +3,8 @@
 Classes:
     Sistema
         Funções:
-            getTurno()
-            setTurno()
+            getHora()
+            setHora()
     Membro (Abstrata)
         Funções:
             perguntarHorario()
