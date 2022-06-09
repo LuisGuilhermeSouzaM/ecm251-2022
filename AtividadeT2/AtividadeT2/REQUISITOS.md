@@ -3,19 +3,19 @@
 Classes:
     Sistema
         Funções:
-            qualTurno()
-            mudarTurno()
-    Membro (Abs)
+            getTurno()
+            setTurno()
+    Membro (Abstrata)
         Funções:
             perguntarHorario()
     ScriptGuys
-        PostarMensagem
+        PostarMensagem()
     MobileMembers
-        PostarMensagem
+        PostarMensagem()
     HeavyLifters
-        PostarMensagem
+        PostarMensagem()
     BigBrothers
-        PostarMensagem
+        PostarMensagem()
 
 Interfaces:
     PostarMensagem

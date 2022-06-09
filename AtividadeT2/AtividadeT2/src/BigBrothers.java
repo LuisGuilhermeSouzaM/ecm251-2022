@@ -1,7 +1,5 @@
 public class BigBrothers extends Membro {
 
-   
-
     public BigBrothers(String nome, String email, EnumFuncao funcao, EnumHora hora) {
         super(nome, email, funcao, hora);
     }
