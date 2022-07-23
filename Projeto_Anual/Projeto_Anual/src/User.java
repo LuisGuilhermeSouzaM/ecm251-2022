@@ -10,7 +10,6 @@ public class User {
     private String email;
     private int idUser;
     private int age;
-    private Jogo jogo;
     LocalDate currentDate =  LocalDate.now(); 
 
     public static int calculateAge(LocalDate birthDate, LocalDate currentDate) {
@@ -30,14 +29,6 @@ public class User {
         this.age = calculateAge(birthDate, currentDate);
     }
     
-    public Jogo getJogo() {
-        return jogo;
-    }
-
-    public void setJogo(Jogo jogo) {
-        this.jogo = jogo;
-    }
-
     public int getAge() {
         return age;
     }
@@ -57,5 +48,22 @@ public class User {
     public boolean podeJogar(Jogo jogo) {
         if(age < jogo.getIdadeMinima()) return false;
         return true;
+    }
+
+    public Review writeReview(Jogo jogo, int stars, String avaliacao) {
+        Review review = new Review();
+        User user = new User(this.username, this.birthDate, this.email);
+        review.setUser(user);
+        review.setJogo(jogo);
+        review.setStars(stars);
+        review.setAvaliacao(avaliacao);
+        if(review.getStars() == 3){
+            review.setFeedback(EnumFeedback.NEUTRO);
+        } else if(review.getStars() > 3) {
+            review.setFeedback(EnumFeedback.POSITIVO);
+        } else {
+            review.setFeedback(EnumFeedback.NEGATIVO);
+        }
+        return review;
     }
 }
