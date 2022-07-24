@@ -5,6 +5,19 @@ public class Review {
     private Jogo jogo;
     private User user;
 
+    public Review(int stars, String avaliacao, Jogo jogo, User user) {
+        this.stars = stars;
+        this.avaliacao = avaliacao;
+        this.jogo = jogo;
+        this.user = user;
+        if(stars == 3){
+            this.feedback = EnumFeedback.NEUTRO;
+        } else if(stars > 3) {
+            this.feedback = EnumFeedback.POSITIVO;
+        } else {
+            this.feedback = EnumFeedback.NEGATIVO;
+        }
+    }
     public User getUser() {
         return user;
     }

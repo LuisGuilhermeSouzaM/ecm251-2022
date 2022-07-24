@@ -1,3 +1,3 @@
 public enum EnumTipoDeJogo {
-    ACAO, RPG, JRPG, MOBA, SHOOTER, FPS;
+    ACAO, AVENTURA, RPG, JRPG, MOBA, SHOOTER, FPS, SURVIVAL;
 }

@@ -51,19 +51,7 @@ public class User {
     }
 
     public Review writeReview(Jogo jogo, int stars, String avaliacao) {
-        Review review = new Review();
-        User user = new User(this.username, this.birthDate, this.email);
-        review.setUser(user);
-        review.setJogo(jogo);
-        review.setStars(stars);
-        review.setAvaliacao(avaliacao);
-        if(review.getStars() == 3){
-            review.setFeedback(EnumFeedback.NEUTRO);
-        } else if(review.getStars() > 3) {
-            review.setFeedback(EnumFeedback.POSITIVO);
-        } else {
-            review.setFeedback(EnumFeedback.NEGATIVO);
-        }
+        Review review = new Review(stars, avaliacao, jogo, this);
         return review;
     }
 }
